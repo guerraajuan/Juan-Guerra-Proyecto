@@ -1,0 +1,192 @@
+/*reseteo de valores en toda la pagina*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*se elimina decoracion de etiqueta "a" y se define color de letra*/
+a{
+    text-decoration: none;
+    color: #000033;
+}
+
+/* efecto para link de volver a pagina de inicio */
+.link:hover{
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+/* se define ancho 100% contenedor del video y centrado */
+.video{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* tamano del video */
+.vid{
+    width: 70%;
+    height: 400px;
+}
+.main-title{
+    display: flex;
+    justify-content: space-evenly;
+    padding: .5rem;
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #16C0EA;
+    color: #000033;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+   
+}
+
+
+.section-principal{
+    display: flex;
+    flex-direction: column;
+    background-color:#ebeae5;
+    width: 100%;
+    
+    
+
+}
+
+.container-imagen{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+   
+
+}
+  
+.imagen{
+    display: flex;
+    width: 100%; 
+    border-radius: 3px;
+    border: 1px solid rgb(179, 120, 120);
+}
+
+.img-art{
+    display: flex;
+}
+
+
+/*contenedor de parejas de fotos*/
+.container-articulos{
+    display: flex;
+    width: 100%;
+    background-color:thistle;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+/*contenedor de cada foto*/
+.articulo{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    box-sizing: border-box;
+    
+}
+
+/*titulo de cada foto*/
+.titulo-h3{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 30px;
+}
+
+/*estilos para el boton de comentar*/
+.boton{
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    background-color: #b65d22;
+    cursor: pointer;
+    
+}
+/*estilo para burbuja que se inserta con el comentario*/
+.comentario{
+    background-color: #bd95d4;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 3px;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+/*div donde se insertan los comentarios*/
+.box-comentario{
+    padding:  10px ;
+    background-color: thistle;
+
+    
+}
+/*input que recibe el comentario*/
+.entrada-comentario{
+    width: 200px;
+    height: 40px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #7fdde0;
+    
+
+}
+/*titulo de la seccion de fotos*/
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000033;
+    background-color: #16C0EA;
+    padding: 10px;
+}
+/* parametros para el footer */
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #16C0EA;
+    color: #000033;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+@media (max-width: 550px){
+    .container-articulos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;  
+    }
+    .articulo{
+        
+        width: 100%;
+       
+        
+    }
+
+}
+

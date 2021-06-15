@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto-Final</title>
+    <link rel="stylesheet" href="./Estilos/estilos-home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+    <script src="./Js/funcion.js"></script>
+</head>
+
+
+<body>
+    <section class="container-principal"> 
+
+        <div class="mensaje">
+            <h1> ¡Hola Ingresa tus Datos!</h1>
+            <h2 class="subtitulo">Podras acceder a nuestro contenido multimedia <br> y agregar comentarios</h2>
+
+        </div>
+
+        <div class="formulario">
+
+            <form action="" class="cuadro">
+                <h2 class="titulo-cuadro">Ingresa tus Datos</h2>
+
+                <input type="text" placeholder=" Ingresa tu nombre" id="nombre" class="entrada">
+                <input type="text" placeholder=" Apellido paterno" id="paterno" class="entrada" >
+                <input type="text" placeholder=" Apellido materno" id="materno" class="entrada">
+                <input type="email" placeholder=" Email" class="entrada" id="correo">
+                <input type="text" placeholder=" Teléfono (9 digitos)" class="entrada" id="tel">
+                <p class="casilla"><input  type="checkbox" name="terminos" id="terminos">  Aceptar términos y condiciones</p>
+
+                <button onclick="validaDatos()" type="button" class="boton"> Validar Datos</button>
+                
+                <p class="error" id="mensaje"></p>  
+
+            </form>
+
+
+        </div>
+        
+    </section>
+    
+</body>
+</html>
